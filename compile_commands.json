@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/Users/adamkowalski/src/cpp_gen/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -I../include -isystem /usr/local/include    -std=gnu++1z -o CMakeFiles/cpp_gen.dir/src/main.cc.o -c /Users/adamkowalski/src/cpp_gen/src/main.cc",
-  "file": "/Users/adamkowalski/src/cpp_gen/src/main.cc"
+  "directory": "/Users/adamkowalski/dev/cpp_gen/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I../include    -std=gnu++1z -o CMakeFiles/cpp_gen.dir/src/main.cc.o -c /Users/adamkowalski/dev/cpp_gen/src/main.cc",
+  "file": "/Users/adamkowalski/dev/cpp_gen/src/main.cc"
 }
 ]
