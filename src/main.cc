@@ -9,12 +9,10 @@ namespace po = boost::program_options;
 auto cmake_lists_txt(const std::string &name) -> std::string {
   return fmt::format("cmake_minimum_required(VERSION 3.0)\n\n"
                      "set(CMAKE_EXPORT_COMPILE_COMMANDS 1)\n"
-                     "set(CMAKE_CXX_COMPILER g++-9)\n\n"
                      "project({0})\n\n"
                      "add_executable({0} src/main.cc)\n\n"
                      "target_include_directories({0} PRIVATE include)\n\n"
-                     "target_compile_features({0} PRIVATE cxx_std_17)\n\n"
-                     "target_compile_options({0} PRIVATE -fconcepts)\n",
+                     "target_compile_features({0} PRIVATE cxx_std_17)\n",
                      name);
 }
 
