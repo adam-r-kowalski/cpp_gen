@@ -12,7 +12,29 @@ auto cmake_lists_txt(const std::string &name) -> std::string {
                      "project({0})\n\n"
                      "add_executable({0} src/main.cc)\n\n"
                      "target_include_directories({0} PRIVATE include)\n\n"
-                     "target_compile_features({0} PRIVATE cxx_std_17)\n",
+                     "target_compile_features({0} PRIVATE cxx_std_17)\n\n"
+                     "target_compile_options({0}\n"
+                     "    INTERFACE\n"
+                     "   -Wall\n"
+                     "   -Wextra\n"
+                     "   -Wshadow\n"
+                     "   -Wnon-virtual-dtor\n"
+                     "   -Wold-style-cast\n"
+                     "   -Wcast-align\n"
+                     "   -Wunused\n"
+                     "   -Woverloaded-virtual\n"
+                     "   -Wpedantic\n"
+                     "   -Wconversion\n"
+                     "   -Wsign-conversion\n"
+                     "   -Wmisleading-indentation\n"
+                     "   -Wduplicated-cond\n"
+                     "   -Wduplicated-branches\n"
+                     "   -Wlogical-op\n"
+                     "   -Wnull-dereference\n"
+                     "   -Wuseless-cast\n"
+                     "   -Wdouble-promotion\n"
+                     "   -Wformat=2\n"
+                     "   )\n\n",
                      name);
 }
 
